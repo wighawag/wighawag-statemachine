@@ -30,6 +30,7 @@
 	<config-file template="nmml.template" output="project.nmml" />
 
 	<dependencies>
-	       	<repository id="com.wighawag.report.Report" version="0.0.1" />
+	    <repository id="com.wighawag.report.Report" version="0.0.1" />
+        <repository id="com.wighawag.utils" version="0.0.1" />
 	</dependencies>
 </project>
