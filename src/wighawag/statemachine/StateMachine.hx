@@ -1,13 +1,20 @@
-package com.wighawag.statemachine;
+/****
+* Wighawag License:
+* - free to use for commercial and non commercial application
+* - provided the modification done to it are given back to the community
+* - use at your own risk
+* 
+****/
+
+package wighawag.statemachine;
 import msignal.Signal;
-import com.fermmtools.utils.ObjectHash;
 class StateMachine<T> {
 
     private var currentState : State<T>;
 
-    private var transitions : ObjectHash<State<T>, Hash<State<T>>>;
+    private var transitions : Map<State<T>, Map<String,State<T>>>;
 
-    private var states : ObjectHash<Class<State<T>>, State<T>>;
+    private var states : Map<Class<State<T>>, State<T>>;
 
     private var model : T;
 
@@ -46,11 +53,11 @@ class StateMachine<T> {
     public function addTransition(prevState : State<T>, event : String, nextState : State<T>){
         if (transitions == null){
             currentState = prevState;
-            transitions = new ObjectHash();
+            transitions = new Map();
         }
         var hashSet = transitions.get(prevState);
         if (hashSet == null){
-            hashSet = new Hash<State<T>>();
+            hashSet = new Map<String,State<T>>();
         }
         hashSet.set(event,nextState);
         transitions.set(prevState,hashSet);

@@ -1,0 +1,12 @@
+{
+  "name": "wighawag-statemachine",
+  "url" : "https://github.wighawag/wighawag-statemachine/",
+  "license": "Wighawag",
+  "tags": ["cross"],
+  "description": "",
+  "version": "0.0.1",
+  "releasenote": "",
+  "contributors": ["wighawag"],
+  "dependencies": {"wighawag-report":"", "wighawag-utils":"", "msignal":""},
+  "classPath":"src"
+}
