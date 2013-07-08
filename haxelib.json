@@ -1,12 +1,12 @@
 {
   "name": "wighawag-statemachine",
   "url" : "https://github.wighawag/wighawag-statemachine/",
-  "license": "Wighawag",
+  "license": "GPL",
   "tags": ["cross"],
-  "description": "",
+  "description": "A simple StateMachine lib that support stateless 'state'",
   "version": "0.0.1",
   "releasenote": "",
   "contributors": ["wighawag"],
-  "dependencies": {"wighawag-report":"", "wighawag-utils":"", "msignal":""},
+  "dependencies": {"wighawag-report":"0.0.1", "wighawag-utils":"0.0.1", "msignal":"1.2.1"},
   "classPath":"src"
 }
