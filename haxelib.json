@@ -4,7 +4,7 @@
   "license": "GPL",
   "tags": ["cross"],
   "description": "A simple StateMachine lib that support stateless 'state'",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "releasenote": "",
   "contributors": ["wighawag"],
   "dependencies": {"wighawag-report":"0.0.1", "wighawag-utils":"0.0.1", "msignal":"1.2.1"},
