@@ -1,6 +1,6 @@
 {
   "name": "wighawag-statemachine",
-  "url" : "https://github.wighawag/wighawag-statemachine/",
+  "url" : "https://github.com/wighawag/wighawag-statemachine/",
   "license": "GPL",
   "tags": ["cross"],
   "description": "A simple StateMachine lib that support stateless 'state'",
